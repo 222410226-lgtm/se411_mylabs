@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>psu.se411</groupId>
+    <artifactId>lab04</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>Lab04 Maven Project</name>
+
+<description>
+    SE411 Maven project with JavaFX and Maven Site Plugin
+</description>
+
+<url>https://example.com/lab04</url>
+
+<licenses>
+    <license>
+        <name>Apache License, Version 2.0</name>
+        <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        <distribution>repo</distribution>
+    </license>
+</licenses>
+
+<organization>
+    <name>Prince Sultan University</name>
+    <url>https://www.psu.edu.sa/</url>
+</organization>
+
+<developers>
+    <developer>
+        <name>Hatoon</name>
+        <email>222410226@psu.edu.sa</email>
+        <organization>Prince Sultan University</organization>
+        <organizationUrl>https://www.psu.edu.sa/</organizationUrl>
+    </developer>
+</developers>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>23</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+
+       <plugins>
+
+    <plugin>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-maven-plugin</artifactId>
+        <version>0.0.8</version>
+        <configuration>
+            <mainClass>lab04.MainClass</mainClass>
+        </configuration>
+    </plugin>
+
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.21.0</version>
+    </plugin>
+    <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-project-info-reports-plugin</artifactId>
+    <version>3.5.0</version>
+</plugin>
+
+</plugins>
+    </build>
+
+</project>
